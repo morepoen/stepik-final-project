@@ -1,8 +1,0 @@
-'''def should_be_cost_message(self):
-        cart_cost_message = self.browser.find_element(*ProductPagelocators.CART_COST_MESSAGE)
-        text_cart_cost_message = cart_cost_message.text
-        product_cost = self.browser.find_element(*ProductPagelocators.PRODUCT_PRICE)
-        product_cost_text = product_cost.text
-        assert product_cost_text in text_cart_cost_message
-
-    '''
