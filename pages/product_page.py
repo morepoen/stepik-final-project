@@ -10,7 +10,6 @@ class ProductPage(BasePage):
         added_to_cart_message = self.browser.find_element(*ProductPagelocators.ADDED_TO_CART_MESSAGE)
         text_added_to_cart_message = added_to_cart_message.text
         product_name = (self.browser.find_element(*ProductPagelocators.PRODUCT_NAME)).text
-        print(product_name)
         needed_added_to_cart_message = "{} has been added to your basket.".format(product_name)
         assert text_added_to_cart_message == needed_added_to_cart_message, "Wrong added_to_basket message"
 
